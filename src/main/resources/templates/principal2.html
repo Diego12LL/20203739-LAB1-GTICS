@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Página principal con logo</title>
+  <link th:href="@{/bootstrap.min.css}" rel="stylesheet"/>
+  <link th:href="@{/style.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<header>
+  <div class="navbar-container">
+    <nav class="navbar">
+      <div class="nav-link" href="resources/templates/fondoInicio.jpg">
+      </div>
+      <div class="nav-search">
+        <form>
+          <input aria-label="buscar" type="text" placeholder="Buscar divisas con logo">
+        </form>
+      </div>
+      <div class="nav-link">
+        <a href="#">Explorar</a>
+        <a href="#">Mis vuelos</a>
+        <a href="#">Inicia sesión</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="navbar-container">
+    <nav class="navbar">
+      <div class="nav-link">
+        <a href="#">Vuelos</a>
+        <a href="#">Paquetes</a>
+        <a href="#">Hoteles</a>
+        <a href="#">Autos</a>
+        <a href="#">Seguros</a>
+        <a href="#">Upgrade</a>
+        <a href="#">Centro de ayuda</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="body-container">
+  <div class="box-container">
+    <div class="box-form">
+      <form action="/homepage" method="post">
+        <div class="box-title">
+          <h2>Iquitos</h2>
+        </div>
+        <h5>Descubra maravillas ocultas y destinos inspiradores in Iquitos</h5>
+
+        <button type="submit" class="btn btn-primary">Comprar</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
